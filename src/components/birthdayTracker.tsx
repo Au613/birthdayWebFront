@@ -32,8 +32,6 @@ export default function BirthdayTracker() {
 		event.preventDefault()
 		const form = event.currentTarget
 
-		const newId = (Object.keys(birthdays).length + 1).toString() // Generate a new ID
-
 		// Extract person and date
 		const person = form.person.value
 		const date = new Date(form.date.value) // Convert to Date object
